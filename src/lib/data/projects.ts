@@ -80,7 +80,7 @@ export const projects: Project[] = [
     title: 'Meeting Assistant',
     slug: 'meeting-assistant',
     category: 'Custom Development & AI',
-    description: 'Cross-platform Electron desktop app with stealth overlay window invisible to screen-sharing software',
+    description: 'Cross-platform Electron desktop app with stealth overlay window',
     image: '/stealth-assist.png',
     gallery: [
       '/stealth-assist.png',
