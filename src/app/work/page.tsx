@@ -34,7 +34,11 @@ export default function WorkPage() {
                     alt={project.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-110"
+                    className={`transition duration-500 ${
+                      project.image.startsWith('http')
+                        ? 'object-cover group-hover:scale-110'
+                        : 'object-contain p-2 group-hover:scale-105'
+                    }`}
                   />
                   <div className="absolute right-3 top-3 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur">
                     {project.category}

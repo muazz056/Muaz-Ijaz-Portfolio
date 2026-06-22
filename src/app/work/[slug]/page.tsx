@@ -103,13 +103,17 @@ export default function ProjectPage({ params }: Props) {
             </div>
           </div>
 
-          <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl">
+          <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-800">
             <Image
               src={project.image}
               alt={project.title}
               fill
               sizes="(max-width: 1024px) 100vw, 896px"
-              className="object-cover"
+              className={`${
+                project.image.startsWith('http')
+                  ? 'object-cover'
+                  : 'object-contain p-4'
+              }`}
               priority
             />
           </div>

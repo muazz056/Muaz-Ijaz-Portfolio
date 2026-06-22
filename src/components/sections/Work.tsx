@@ -70,7 +70,11 @@ export function Work() {
                     <OptimizedImage
                       src={project.image}
                       alt={project.title}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                      className={`h-full w-full transition duration-500 ${
+                        project.image.startsWith('http')
+                          ? 'object-cover group-hover:scale-110'
+                          : 'object-contain p-2 group-hover:scale-105'
+                      }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     <div className="absolute right-3 top-3 flex gap-2">
