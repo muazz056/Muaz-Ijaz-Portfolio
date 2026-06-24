@@ -10,7 +10,7 @@ const footerLinks = {
   ],
   connect: [
     { href: 'mailto:muaxijaz@gmail.com', label: 'muaxijaz@gmail.com', external: true },
-    { href: 'https://calendly.com/', label: 'Book a Call', external: true },
+    { href: '/contact', label: 'Book a Call' },
     { href: 'https://www.linkedin.com/in/chaudhry-muaz-ijaz/', label: 'LinkedIn', external: true },
   ],
   legal: [
